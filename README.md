@@ -1,3 +1,2 @@
 # PyEXP
-The EXP coding by python
-I'll publish the popular EXP here.
+The EXP coding by python,and I'll publish the popular EXP here.
